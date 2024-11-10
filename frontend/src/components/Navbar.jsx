@@ -32,7 +32,7 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
     try {
       dispatch(signoutStart())
 
-      const res = await axios.get("https://todoserver2-qdr7626r.b4a.run/api/auth/signout", {
+      const res = await axios.get("https://todoserver3-flzrtwi1.b4a.run/api/auth/signout", {
         withCredentials: true,
       })
 

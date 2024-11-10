@@ -42,7 +42,7 @@ const Home = () => {
   // get all notes
   const getAllNotes = async () => {
     try {
-      const res = await axios.get("https://todoserver2-qdr7626r.b4a.run/api/note/all", {
+      const res = await axios.get("https://todoserver3-flzrtwi1.b4a.run/api/note/all", {
         withCredentials: true,
       })
 
@@ -69,7 +69,7 @@ const Home = () => {
 
     try {
       const res = await axios.delete(
-        "https://todoserver2-qdr7626r.b4a.run/api/note/delete/" + noteId,
+        "https://todoserver3-flzrtwi1.b4a.run/api/note/delete/" + noteId,
         { withCredentials: true }
       )
 
@@ -87,7 +87,7 @@ const Home = () => {
 
   const onSearchNote = async (query) => {
     try {
-      const res = await axios.get("https://todoserver2-qdr7626r.b4a.run/api/note/search", {
+      const res = await axios.get("https://todoserver3-flzrtwi1.b4a.run/api/note/search", {
         params: { query },
         withCredentials: true,
       })
@@ -115,7 +115,7 @@ const Home = () => {
 
     try {
       const res = await axios.put(
-        "https://todoserver2-qdr7626r.b4a.run/api/note/update-note-pinned/" + noteId,
+        "https://todoserver3-flzrtwi1.b4a.run/api/note/update-note-pinned/" + noteId,
         { isPinned: !noteData.isPinned },
         { withCredentials: true }
       )

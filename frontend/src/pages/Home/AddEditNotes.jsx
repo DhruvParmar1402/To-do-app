@@ -17,7 +17,7 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
 
     try {
       const res = await axios.post(
-        "https://todoserver2-qdr7626r.b4a.run/api/note/edit/" + noteId,
+        "hhttps://todoserver3-flzrtwi1.b4a.run/api/note/edit/" + noteId,
         { title, content, tags },
         { withCredentials: true }
       )
@@ -45,7 +45,7 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
   const addNewNote = async () => {
     try {
       const res = await axios.post(
-        "https://todoserver2-qdr7626r.b4a.run/api/note/add",
+        "https://todoserver3-flzrtwi1.b4a.run/api/note/add",
         { title, content, tags },
         { withCredentials: true }
       )

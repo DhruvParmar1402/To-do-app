@@ -36,7 +36,7 @@ const Signup = () => {
     // sign up api
     try {
       const res = await axios.post(
-        "https://todoserver2-qdr7626r.b4a.run/api/auth/signup",
+        "https://todoserver3-flzrtwi1.b4a.run/api/auth/signup",
         { username: name, email, password },
         { withCredentials: true }
       )
